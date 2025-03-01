@@ -68,7 +68,7 @@ const DoubleArticle = (props) => {
         <article
           className={` basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000  ${
             isVisibleOne
-              ? "bg-red-300 md:translate-x-0 md:opacity-100"
+              ? " md:translate-x-0 md:opacity-100"
               : "md:translate-x-[-200%] md:opacity-0"
           } `}
         >
@@ -97,7 +97,7 @@ const DoubleArticle = (props) => {
         <article
           className={` basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000 ${
             isVisibleTwo
-              ? "bg-red-300 md:translate-x-0 md:opacity-100"
+              ? " md:translate-x-0 md:opacity-100"
               : "md:translate-x-[200%] md:opacity-0"
           } `}
         >
@@ -120,13 +120,13 @@ const DoubleArticle = (props) => {
         </div>
       </div>
       <div
-        className="bg-yellow-300 md:flex justify-around relative m-10 "
+        className=" md:flex justify-around relative m-10 "
         ref={observedElementRef}
       >
         <article
           className={` basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000  ${
             isVisible
-              ? "bg-red-300 md:translate-x-0 md:opacity-100"
+              ? " md:translate-x-0 md:opacity-100"
               : "md:translate-x-[-200%] md:opacity-0"
           } `}
         >
