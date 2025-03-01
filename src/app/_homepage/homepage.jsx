@@ -16,22 +16,30 @@ WHO ARE WEee
 </h2>
 <AboutUs/>
         </div>
-
-        <h2 className="headingTitle">
-  OUR SERVICES
+<div className="relative">
+<h2 className="headingTitle sticky top-0 z-20 ">
+  OUR SERVICESeesss
 </h2>
-
+<div className="relative sticky top-1/3 z-100">
 <DoubleArticle/>
+</div>
 
-        
-        <h2 className="headingTitle">
+</div>
+
+
+        <div>
+        <h2 className="headingTitle sticky top-0 ">
         OUR CLIENTS</h2>
         <Clients/>
-        <h2 className="headingTitle">
+        </div>
+       <div>
+       <h2 className="headingTitle ">
         Testimonials</h2>
         {/* <Testimonial />
          */}
    <TestimonialCarousel/>
+       </div>
+  
    </div>
         </>
     )
