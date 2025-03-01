@@ -26,13 +26,10 @@ function CommonLayout({ children }) {
       <div className="flex flex-col bg-white  min-h-dvh justify-between ">
         <header className="flex flex-row justify-around h-[10dvh] relative ">
           <Image
-            // src={Logo}
-            // src={"/logo.jpg"}
-            // src={KoponLogo}
             src={Logo}
             priority
-            // height={50}
-            // width={50}
+            // height={500}
+            // width={500}
             alt="logo image"
             className=" self-start h-[90%] w-[35%]  mt-1 object-cover"
           />
@@ -126,15 +123,37 @@ function CommonLayout({ children }) {
         <footer className=" flex flex-col min-h-[40dvh] ">
           <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
             <div className=" p-3 flex flex-col gap-5 text-center basis-[20%] ">
-              <h3 className="">Company Name</h3>
-              <p className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                iste reiciendis expedita unde tenetur impedit, culpa officiis,
-                distinctio perspiciatis itaque perferendis laborum nesciunt!
-              </p>
+              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company Name</h3>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                    <a href="#" class="group/underline inline-block ">About
+                    <p className="underline-custom"></p>
+                    
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="group/underline inline-block ">Careers
+                    <p className="underline-custom"></p>
+                    </a>
+                    
+                </li>
+            
+                <li class="mb-4">
+                    <a href="#" class="group/underline inline-block ">Blog
+                    <p className="underline-custom"></p>
+                    </a>
+                    
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="group/underline inline-block ">Brand Center
+                    <p className="underline-custom"></p>
+                    </a>
+                  
+                </li>
+            </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
-              <h3 className="">Products</h3>
+              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Products</h3>
               <ul>
                 <li className=" ">
                   <span className="group/underline inline-block">SMART PHONE
@@ -163,7 +182,7 @@ function CommonLayout({ children }) {
               </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
-              <h3>Useful Link</h3>
+              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Link</h3>
               <ul className="">
                 <li className="">
                   <span className="group/underline inline-block">Your account
@@ -196,7 +215,7 @@ function CommonLayout({ children }) {
                   
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
-              <h3>Contact</h3>
+              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h3>
               <ul className="">
                 <li className="flex flex-col text-wrap">
                   <span>
