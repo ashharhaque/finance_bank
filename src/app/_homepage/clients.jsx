@@ -39,11 +39,10 @@ function Clients() {
   ];
   return (
     <>
-      clients
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
         {clientsImageArray
           .map((client) => (
-            <div>
+            <div className="m-3 p-3">
               <Image src={client}></Image>
             </div>
           ))}
