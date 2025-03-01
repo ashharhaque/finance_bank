@@ -123,7 +123,7 @@ function CommonLayout({ children }) {
         <footer className=" flex flex-col min-h-[40dvh] ">
           <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
             <div className=" p-3 flex flex-col gap-5 text-center basis-[20%] ">
-              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company Name</h3>
+              <h3 className="list-text-heading">Company Name</h3>
               <ul className="list-text">
                 <li className="mb-4">
                     <a href="#" className="group/underline inline-block ">About
@@ -153,7 +153,7 @@ function CommonLayout({ children }) {
             </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
-              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Products</h3>
+              <h3 className="list-text-heading">Products</h3>
               <ul className="list-text">
                 <li className="mb-4">
                   <a className="group/underline inline-block">SMART PHONE
@@ -182,7 +182,7 @@ function CommonLayout({ children }) {
               </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
-              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Link</h3>
+              <h3 className="list-text-heading">Useful Link</h3>
               <ul className="list-text">
                 <li className="mb-4">
                   <a className="group/underline inline-block">Your account
@@ -215,7 +215,7 @@ function CommonLayout({ children }) {
                   
             </div>
             {/* <div className=" flex flex-col gap-5 p-3 text-center">
-              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h3>
+              <h3 className="list-text-heading">Contact</h3>
               <ul className="list-text">
                 <li className="flex flex-col text-wrap">
                   <span>
@@ -248,7 +248,7 @@ function CommonLayout({ children }) {
             </div> */}
           </div>
           <div className=" flex flex-col py-5 justify-around  min-h-[15%]">
-            <div className="text-center m-2 md:m-3 flex justify-center items-center">
+            <div className="text-center m-2 md:m-3 flex justify-center items-center list-text-heading">
               Follow Us
             </div>
 

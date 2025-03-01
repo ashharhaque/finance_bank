@@ -7,6 +7,9 @@
     .list-text {
       @apply text-gray-500 dark:text-gray-400 font-medium;
     }
+    .list-text-heading {
+      @apply mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white;
+    }
   }
 
 @theme {
