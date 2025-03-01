@@ -4,7 +4,7 @@ import Carousel from "@/ui/carousel";
  function HomePage(){
     return(
         <>
-        {/* <HeroSection/> */}
+        <HeroSection/>
         <Carousel />
         </>
     )
