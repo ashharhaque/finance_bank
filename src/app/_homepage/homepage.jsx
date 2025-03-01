@@ -4,6 +4,7 @@ import Testimonial from "@/ui/carousel";
 import DoubleArticle from "@homepage/doubleSection";
 import Clients from "@homepage/clients";
 import AboutUs from "@homepage/parallax"
+import TestimonialCarousel from "@homepage/testiomial"
  function HomePage(){
     return(
         <>
@@ -23,7 +24,7 @@ import AboutUs from "@homepage/parallax"
         Testimonials</h2>
         {/* <Testimonial />
          */}
-   
+   <TestimonialCarousel/>
         </>
     )
 }
