@@ -3,6 +3,7 @@ import HeroSection from "@homepage/heroSection";
 import Testimonial from "@/ui/carousel";
 import DoubleArticle from "@homepage/doubleSection";
 import Clients from "@homepage/clients";
+import TestimoialInParallax from "@homepage/parallax"
  function HomePage(){
     return(
         <>
@@ -16,8 +17,9 @@ import Clients from "@homepage/clients";
         <Clients/>
         <h2 className="flex justify-center text-4xl font-extrabold uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 m-[100px]">
         Testimonials</h2>
-        <Testimonial />
-      
+        {/* <Testimonial />
+         */}
+      <TestimoialInParallax/>
         </>
     )
 }
