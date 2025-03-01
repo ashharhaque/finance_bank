@@ -4,6 +4,9 @@
     .underline-custom {
       @apply bg-red-400 h-[3px] border-r-2 scale-x-0  transform-gpu transition-all ease-in-out duration-300 group-hover/underline:scale-x-100;
     }
+    .list-text {
+      @apply text-gray-500 dark:text-gray-400 font-medium;
+    }
   }
 
 @theme {

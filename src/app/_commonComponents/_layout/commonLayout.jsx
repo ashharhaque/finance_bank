@@ -124,7 +124,7 @@ function CommonLayout({ children }) {
           <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
             <div className=" p-3 flex flex-col gap-5 text-center basis-[20%] ">
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company Name</h3>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="list-text">
                 <li className="mb-4">
                     <a href="#" className="group/underline inline-block ">About
                     <p className="underline-custom"></p>
@@ -154,7 +154,7 @@ function CommonLayout({ children }) {
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Products</h3>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="list-text">
                 <li className="mb-4">
                   <a className="group/underline inline-block">SMART PHONE
                   <p className="underline-custom"></p>
@@ -183,7 +183,7 @@ function CommonLayout({ children }) {
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Link</h3>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="list-text">
                 <li className="mb-4">
                   <a className="group/underline inline-block">Your account
                   <p className="underline-custom"></p>
@@ -214,9 +214,9 @@ function CommonLayout({ children }) {
             
                   
             </div>
-            <div className=" flex flex-col gap-5 p-3 text-center">
+            {/* <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h3>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="list-text">
                 <li className="flex flex-col text-wrap">
                   <span>
                     <AdressIcon className=" inline-block h-[100%]" />
@@ -245,7 +245,7 @@ function CommonLayout({ children }) {
                   <span>Fax</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className=" flex flex-col py-5 justify-around  min-h-[15%]">
             <div className="text-center m-2 md:m-3 flex justify-center items-center">
