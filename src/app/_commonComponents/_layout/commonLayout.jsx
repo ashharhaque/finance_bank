@@ -8,6 +8,7 @@ import FaceBookIcon from "@/public/icons/facebook1.svg";
 import YoutubeIcon from "@/public/icons/youtube-red.svg";
 import LinkedInIcon from "@/public/icons/linkedin.svg";
 import XIcon from "@/public/icons/twitter.svg";
+import Logo from "@/public/logo.png"
 import {
   MenuIcon,
   IconCross2,
@@ -27,7 +28,8 @@ function CommonLayout({ children }) {
           <Image
             // src={Logo}
             // src={"/logo.jpg"}
-            src={KoponLogo}
+            // src={KoponLogo}
+            src={Logo}
             priority
             // height={50}
             // width={50}
