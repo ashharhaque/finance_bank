@@ -1,24 +1,25 @@
 "use client"
 import { useState, useEffect } from 'react';
-
+import Image from 'next/image';
+import Person1 from "@/public/katrina.jpg"
 const testimonials = [
   {
     quote: "This product changed my life! The service and quality are unparalleled.",
     name: "John Doe",
     title: "CEO, Company",
-    image: "https://via.placeholder.com/150",
+    image: Person1,
   },
   {
     quote: "Excellent service and amazing support. Truly an outstanding experience.",
     name: "Jane Smith",
     title: "Marketing Manager",
-    image: "https://via.placeholder.com/150",
+    image: Person1,
   },
   {
     quote: "Highly recommended for anyone looking for quality and attention to detail.",
     name: "Mike Brown",
     title: "Developer",
-    image: "https://via.placeholder.com/150",
+    image: Person1,
   },
 ];
 
@@ -55,10 +56,12 @@ const TestimonialCarousel = () => {
               <div key={index} className="w-full flex-shrink-0">
                 <div className="bg-white rounded-xl p-8 shadow-xl m-4">
                   <div className="flex flex-col items-center">
-                    <img
-                      className="w-20 h-20 rounded-full border-4 border-indigo-500 mb-4"
+                    <Image
+                      className="rounded-full border-4 border-indigo-500 mb-4"
                       src={testimonial.image}
                       alt={testimonial.name}
+                      width={80}
+                      height={80}
                     />
                     <p className="text-lg text-gray-800 italic text-center">
                       “{testimonial.quote}”
