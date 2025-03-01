@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         <CommonLayout>
         {children}
         </CommonLayout>
+        {/* <script src="https://console.authkey.io/js/main.js" id="authkey-chat-widget" widget-id="50595f9b-feec-472d-bcc0-f19d788740f8"></script> */}
       </body>
     </html>
   );
