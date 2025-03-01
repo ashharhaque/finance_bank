@@ -9,7 +9,7 @@ function ContentFixedSlide() {
       </h1>
 
       <div className="w-full aspect-video">
-        <ContentWithBgImg className="bg-blue-300 flex flex-col justify-center w-full aspect-video">
+        <ContentWithBgImg className="bg-[url('/websitebackgroundimage4.jpeg')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-center w-full aspect-video">
           <h1 className="sticky top-1/3 flex justify-center items-center font-bold text-xl md:text-2xl">
             Background image component is created
           </h1>
@@ -17,7 +17,7 @@ function ContentFixedSlide() {
       </div>
 
       <div className="w-full aspect-video">
-        <ContentWithBgImg className="bg-red-400 flex flex-col justify-center w-full h-full grayscale">
+        <ContentWithBgImg className="bg-[url('/boardroombackground10.jpeg')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-center w-full h-full grayscale">
           <h1 className="sticky top-1/3 flex justify-center items-center font-bold text-xl md:text-2xl">
             Background image component is created
           </h1>
@@ -25,7 +25,7 @@ function ContentFixedSlide() {
       </div>
 
       <div className="w-full aspect-video">
-        <ContentWithBgImg className="bg-green-300 flex flex-col justify-center w-full h-full grayscale">
+        <ContentWithBgImg className="bg-[url('/images/bg.jpg')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-center w-full h-full grayscale">
           <h1 className="sticky top-1/3 flex justify-center items-center font-bold text-xl md:text-2xl">
             Background image component is created
           </h1>

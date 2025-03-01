@@ -63,7 +63,7 @@ const DoubleArticle = (props) => {
   return (
     <>
       <div
-        className=" md:flex justify-around relative m-10 "
+        className="bg-white md:flex justify-around relative m-10 "
         ref={observedElementRefOne}
       >
         <article
@@ -73,7 +73,7 @@ const DoubleArticle = (props) => {
               : "md:translate-x-[-200%] md:opacity-0"
           } `}
         >
-          <p>
+          <p className="text-gray-900 dark:text-white ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
             doloremque quas dignissimos, quasi beatae sunt earum inventore.
@@ -92,7 +92,7 @@ const DoubleArticle = (props) => {
         </div>
       </div>
       <div
-        className=" md:flex md:flex-row-reverse justify-around relative m-10 overflow-hidden"
+        className="bg-white md:flex md:flex-row-reverse justify-around relative m-10 overflow-hidden"
         ref={observedElementRefTwo}
       >
         <article
@@ -121,7 +121,7 @@ const DoubleArticle = (props) => {
         </div>
       </div>
       <div
-        className=" md:flex justify-around relative m-10 "
+        className="bg-white md:flex justify-around relative m-10 "
         ref={observedElementRef}
       >
         <article
