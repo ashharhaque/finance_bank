@@ -63,7 +63,7 @@ const DoubleArticle = (props) => {
   return (
     <>
       <div
-        className="bg-white md:flex justify-around relative m-10 "
+        className="bg-neutral-900 md:flex justify-around relative m-10 "
         ref={observedElementRefOne}
       >
         <article
@@ -121,7 +121,7 @@ const DoubleArticle = (props) => {
         </div>
       </div>
       <div
-        className="bg-white md:flex justify-around relative m-10 "
+        className="bg-neutral-900  md:flex justify-around relative m-10 "
         ref={observedElementRef}
       >
         <article
