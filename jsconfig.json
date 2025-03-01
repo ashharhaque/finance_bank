@@ -7,7 +7,9 @@
       "@/public/*":["./public/*"],
       "@/views/*":["./src/app/_views/*"],
       "@/ui/*":["./src/app/_commonComponents/_ui/*"],
-      "@commonLayout/*":["src/app/_commonComponents/_layout/*"]
+      "@commonLayout/*":["src/app/_commonComponents/_layout/*"],
+      "@homepage/*":["src/app/_homepage/*"]
+
     }
   },
   "exclude": ["node_modules", ".next"],
