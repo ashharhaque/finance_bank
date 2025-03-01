@@ -124,28 +124,28 @@ function CommonLayout({ children }) {
           <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
             <div className=" p-3 flex flex-col gap-5 text-center basis-[20%] ">
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company Name</h3>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                    <a href="#" class="group/underline inline-block ">About
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                    <a href="#" className="group/underline inline-block ">About
                     <p className="underline-custom"></p>
                     
                     </a>
                 </li>
-                <li class="mb-4">
-                    <a href="#" class="group/underline inline-block ">Careers
+                <li className="mb-4">
+                    <a href="#" className="group/underline inline-block ">Careers
                     <p className="underline-custom"></p>
                     </a>
                     
                 </li>
             
-                <li class="mb-4">
-                    <a href="#" class="group/underline inline-block ">Blog
+                <li className="mb-4">
+                    <a href="#" className="group/underline inline-block ">Blog
                     <p className="underline-custom"></p>
                     </a>
                     
                 </li>
-                <li class="mb-4">
-                    <a href="#" class="group/underline inline-block ">Brand Center
+                <li className="mb-4">
+                    <a href="#" className="group/underline inline-block ">Brand Center
                     <p className="underline-custom"></p>
                     </a>
                   
@@ -154,60 +154,60 @@ function CommonLayout({ children }) {
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Products</h3>
-              <ul>
-                <li className=" ">
-                  <span className="group/underline inline-block">SMART PHONE
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a className="group/underline inline-block">SMART PHONE
                   <p className="underline-custom"></p>
-                  </span>
+                  </a>
                  
                 </li>
-                <li className="">
-                  <span className="group/underline inline-block">DESKTOP
+                <li className="mb-4">
+                  <a className="group/underline inline-block">DESKTOP
                   <p className="underline-custom"></p>
-                  </span>
+                  </a>
                   
                 </li>
-                <li className="">
-                  <span className="group/underline inline-block">RANDMO TEXT
+                <li className="mb-4">
+                  <a className="group/underline inline-block">RANDMO TEXT
                   <p className="underline-custom"></p>
-                  </span>
+                  </a>
                   
                 </li>
-                <li>
-                  <span className="group/underline inline-block">
+                <li className="mb-4">
+                  <a className="group/underline inline-block">
                     NETALS
                     <p className="underline-custom"></p>
-                  </span>
+                  </a>
                 </li>
               </ul>
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Link</h3>
-              <ul className="">
-                <li className="">
-                  <span className="group/underline inline-block">Your account
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a className="group/underline inline-block">Your account
                   <p className="underline-custom"></p>
-                  </span>
+                  </a>
                   
                 </li>
-                <li className="">
-                  <span className="group/underline inline-block ">Become Affiliate
+                <li className="mb-4">
+                  <a className="group/underline inline-block ">Become Affiliate
                   <p className="underline-custom"></p>
-                  </span>
+                  </a>
                   
                 </li>
-                <li className="">
-                  <span className="group/underline inline-block ">Shipping Rate
+                <li className="mb-4">
+                  <a className="group/underline inline-block ">Shipping Rate
                   <p className="underline-custom"></p>
-                  </span>
+                  </a>
                   
                 </li>
-                <li className="">
-                <span className="group/underline inline-block ">
+                <li className="mb-4">
+                <a className="group/underline inline-block ">
                 Help
               <p className="underline-custom "></p>
 
-                </span>
+                </a>
              
                 </li>
               </ul>
@@ -216,7 +216,7 @@ function CommonLayout({ children }) {
             </div>
             <div className=" flex flex-col gap-5 p-3 text-center">
               <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h3>
-              <ul className="">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="flex flex-col text-wrap">
                   <span>
                     <AdressIcon className=" inline-block h-[100%]" />
