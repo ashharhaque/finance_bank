@@ -8,16 +8,19 @@ import TestimonialCarousel from "@homepage/testiomial"
  function HomePage(){
     return(
         <>
-        <div className="min-h-screen bg-[url('/logoOld.png')] bg-no-repeat bg-center bg-fixed bg-cover">
+        <div className="min-h-screen bg-[url('/logo2.png')] bg-no-repeat bg-center bg-fixed bg-cover">
         <HeroSection/>
         <h2 className="flex justify-center text-4xl font-extrabold uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 m-[100px]">
  WHO ARE WE
 </h2>
 <AboutUs/>
         <h2 className="flex justify-center text-4xl font-extrabold uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 m-[100px]">
-  OUR SERVICESss
+  OUR SERVICES
 </h2>
-        <DoubleArticle/>
+
+<DoubleArticle/>
+
+        
         <h2 className="flex justify-center text-4xl font-extrabold uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 m-[100px]">
         OUR CLIENTS</h2>
         <Clients/>
