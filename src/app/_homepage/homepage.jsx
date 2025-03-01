@@ -10,10 +10,13 @@ import TestimonialCarousel from "@homepage/testiomial"
         <>
         <div className="min-h-screen bg-[url('/logo.png')] bg-no-repeat bg-center bg-fixed bg-cover">
         <HeroSection/>
-        <h2 className="headingTitle">
+        <div>
+        <h2 className="headingTitle sticky top-0 ">
 WHO ARE WEee
 </h2>
 <AboutUs/>
+        </div>
+
         <h2 className="headingTitle">
   OUR SERVICES
 </h2>
