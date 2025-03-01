@@ -6,7 +6,8 @@
       "@/icons/*":["./src/app/_commonComponents/_icon/*"],
       "@/public/*":["./public/*"],
       "@/views/*":["./src/app/_views/*"],
-      "@/ui/*":["./src/app/_commonComponents/_ui/*"]
+      "@/ui/*":["./src/app/_commonComponents/_ui/*"],
+      "@commonLayout/*":["src/app/_commonComponents/_layout/*"]
     }
   },
   "exclude": ["node_modules", ".next"],

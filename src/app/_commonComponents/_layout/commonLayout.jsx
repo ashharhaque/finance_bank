@@ -17,7 +17,7 @@ import {
   FaxMachine,
 } from "@/icons/svgicon";
 
-function layoutViews({ children }) {
+function CommonLayout({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
 
   return (
@@ -270,4 +270,5 @@ function layoutViews({ children }) {
   );
 }
 
-export default layoutViews;
+// export default LayoutViews;
+export {CommonLayout}
