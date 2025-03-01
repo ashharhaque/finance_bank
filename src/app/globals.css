@@ -10,6 +10,9 @@
     .list-text-heading {
       @apply mb-6  font-semibold text-gray-900 uppercase dark:text-white;
     }
+    .headingTitle{
+      @apply flex justify-center text-4xl font-extrabold uppercase tracking-wider text-transparent bg-clip-text  m-[100px] bg-gradient-to-r from-teal-500 to-teal-300 text-transparent bg-clip-text text-center font-bold text-3xl p-2 sm:text-5xl lg:text-7xl leading-tight tracking-tighter
+    }
   }
 
 @theme {
