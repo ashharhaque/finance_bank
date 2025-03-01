@@ -62,7 +62,8 @@ const DoubleArticle = (props) => {
 
   return (
     <>
-      <div
+    <div className="sticky top-1/3">
+    <div
         className="bg-neutral-900 md:flex justify-around relative m-10 "
         ref={observedElementRefOne}
       >
@@ -91,7 +92,9 @@ const DoubleArticle = (props) => {
           />
         </div>
       </div>
-      <div
+    </div>
+   <div className="sticky top-1/3">
+   <div
         className="bg-white md:flex md:flex-row-reverse justify-around relative m-10 overflow-hidden"
         ref={observedElementRefTwo}
       >
@@ -120,7 +123,9 @@ const DoubleArticle = (props) => {
           />
         </div>
       </div>
-      <div
+   </div>
+     <div className="sticky top-1/3">
+     <div
         className="bg-neutral-900  md:flex justify-around relative m-10 "
         ref={observedElementRef}
       >
@@ -149,6 +154,8 @@ const DoubleArticle = (props) => {
           />
         </div>
       </div>
+     </div>
+     
     </>
   );
 };
