@@ -39,14 +39,14 @@ function CommonLayout({ children }) {
           > */}
           {/* <h12 className="bg-red-600  ">QOPON</h12> */}
           <nav
-            className={` flex  flex-col py-6 pr-4  absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top   md:flex md:flex-row md:self-stretch md:justify-around md:p-0 md:relative md:top-0 md:left-0 md:transition-none ${
+            className={` flex list-text-heading  flex-col py-6 pr-4 mt-[20px] absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top   md:flex md:flex-row md:self-stretch md:justify-around md:p-0 md:relative md:top-0 md:left-0 md:transition-none ${
               menuToggleOpen
                 ? " bg-zinc-50 translate-y-[0%] md:bg-white "
                 : "scale-y-0 invisible md:visible md:scale-y-100"
             }`}
           >
             <span
-              className={`group/underline transition-all ease-in-out delay-75 ${
+              className={`group/underline transition-all ease-in-out delay-75  ${
                 menuToggleOpen
                   ? "-translate-y-3 md:translate-y-0"
                   : "-translate-y-full invisible"
@@ -57,7 +57,7 @@ function CommonLayout({ children }) {
             </span>
 
             <span
-              className={`group/underline transition-all ease-in-out delay-100 ${
+              className={`group/underline transition-all ease-in-out delay-100   ${
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
@@ -77,7 +77,7 @@ function CommonLayout({ children }) {
               <p className="underline-custom"></p>
             </span>
             <span
-              className={`group/underline transition-all ease-in-out delay-200 ${
+              className={`group/underline transition-all ease-in-out delay-200  ${
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
@@ -87,7 +87,7 @@ function CommonLayout({ children }) {
               <p className="underline-custom"></p>
             </span>
             <span
-              className={`group/underline transition-all ease-in-out delay-300 ${
+              className={`group/underline transition-all ease-in-out delay-300  ${
                 menuToggleOpen
                   ? "-translate-y-3 "
                   : "-translate-y-full invisible"
