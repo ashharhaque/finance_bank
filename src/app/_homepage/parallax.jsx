@@ -39,7 +39,7 @@ function ContentFixedSlide() {
       </div>
       </div>
     {/* last slide to make sticky */}
-    <div className="sticky top-[60%]">
+    <div className="sticky top-1/3">
       <div className="bg-white w-full aspect-video">
         {/* <ContentWithBgImg className="bg-[url('/images/bg.jpg')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-center w-full h-full grayscale"> */}
           <h1 className="sticky top-1/3 flex justify-center items-center font-bold text-xl md:text-2xl">
