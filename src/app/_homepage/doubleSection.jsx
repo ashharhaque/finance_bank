@@ -99,7 +99,7 @@ const DoubleArticle = (props) => {
         ref={observedElementRefTwo}
       >
         <article
-          className={`sticky top-1/3 basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000 ${
+          className={`sticky top-0 md:static basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000 ${
             isVisibleTwo
               ? " md:translate-x-0 md:opacity-100"
               : "md:translate-x-[200%] md:opacity-0"
