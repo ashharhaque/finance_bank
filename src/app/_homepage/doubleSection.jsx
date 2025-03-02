@@ -155,7 +155,28 @@ const DoubleArticle = (props) => {
         </div>
       </div>
      </div>
+     {/*last element is added so that during stick7 implementation the last the title must not move with second last item */}
+     <div className="sticky top-1/3">
+   <div
+        className="bg-white h-[500px] md:flex md:flex-row-reverse justify-around relative m-10 overflow-hidden"
+        ref={observedElementRefTwo}
+      >
+        <article
+          className={` basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000 ${
+            isVisibleTwo
+              ? " md:translate-x-0 md:opacity-100"
+              : "md:translate-x-[200%] md:opacity-0"
+          } `}
+        >
+          <p className="">
+      
+          </p>
+        </article>
+        <div className="relative  ">
      
+        </div>
+      </div>
+   </div>
     </>
   );
 };
