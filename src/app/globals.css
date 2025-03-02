@@ -20,7 +20,7 @@
           max-w-[90%] mx-auto; /* Adjust width to fit mobile */
   }
     .bg-image{
-      @apply bg-[url('/logo1.jpeg')] bg-no-repeat bg-center bg-fixed bg-cover;
+      @apply bg-[url('/logo1.png')] bg-no-repeat bg-center bg-fixed bg-cover;
     }
     .text{
       @apply  text-lg font-normal text-gray-300 lg:text-xl 
