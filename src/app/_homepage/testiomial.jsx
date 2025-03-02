@@ -45,7 +45,7 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto py-16 px-8">
+    <div className="w-full max-w-5xl mx-auto py-16 px-8 sticky top-1/3">
       <div className="relative">
         {/* Slider Container */}
         <div className="overflow-hidden rounded-xl shadow-2xl bg-gradient-to-r from-indigo-500 to-purple-500">

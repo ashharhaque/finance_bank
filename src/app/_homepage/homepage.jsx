@@ -36,11 +36,15 @@ WHO ARE WEee
         <Clients/>
         </div>
        <div>
-       <h2 className="headingTitle ">
+        <div>
+        <h2 className="headingTitle sticky top-0">
         Testimonials</h2>
         {/* <Testimonial />
          */}
+        
    <TestimonialCarousel/>
+        </div>
+
        </div>
   
    </div>
