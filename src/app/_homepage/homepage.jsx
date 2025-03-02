@@ -17,10 +17,13 @@ WHO ARE WEee
 <AboutUs/>
         </div>
 <div className="relative">
+{/* <h2 className="headingTitle sticky top-0 z-20 ">
+  OUR SERVICESeesss
+</h2> */}
+<div className="relative sticky top-1/3 z-100">
 <h2 className="headingTitle sticky top-0 z-20 ">
   OUR SERVICESeesss
 </h2>
-<div className="relative sticky top-1/3 z-100">
 <DoubleArticle/>
 </div>
 
