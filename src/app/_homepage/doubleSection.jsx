@@ -99,14 +99,14 @@ const DoubleArticle = (props) => {
         ref={observedElementRefTwo}
       >
         <article
-          className={` basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000 ${
+          className={`sticky top-1/3 basis-[40%] text-center flex items-center md:transition-all md:ease-in-out  md:duration-1000 ${
             isVisibleTwo
               ? " md:translate-x-0 md:opacity-100"
               : "md:translate-x-[200%] md:opacity-0"
           } `}
         >
           <p className="textDark p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+          tgtg  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
             doloremque quas dignissimos, quasi beatae sunt earum inventore.
             Unde, similique molestias? Iure quis dolorem mollitia soluta
