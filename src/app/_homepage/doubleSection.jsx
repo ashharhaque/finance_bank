@@ -74,7 +74,7 @@ const DoubleArticle = (props) => {
               : "md:translate-x-[-200%] md:opacity-0"
           } `}
         >
-          <p className="text-gray-900 dark:text-white ">
+          <p className="text ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
             doloremque quas dignissimos, quasi beatae sunt earum inventore.
@@ -105,7 +105,7 @@ const DoubleArticle = (props) => {
               : "md:translate-x-[200%] md:opacity-0"
           } `}
         >
-          <p className="">
+          <p className="textDark">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
             doloremque quas dignissimos, quasi beatae sunt earum inventore.
@@ -136,7 +136,7 @@ const DoubleArticle = (props) => {
               : "md:translate-x-[-200%] md:opacity-0"
           } `}
         >
-          <p>
+          <p className="text-gray-100  text-2xl font-normal">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
             doloremque quas dignissimos, quasi beatae sunt earum inventore.

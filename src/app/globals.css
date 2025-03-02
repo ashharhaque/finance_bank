@@ -16,6 +16,13 @@
     .bg-image{
       @apply bg-[url('/logo.png')] bg-no-repeat bg-center bg-fixed bg-cover;
     }
+    .text{
+      @apply  text-lg font-normal text-gray-300 lg:text-xl 
+    }
+    .textDark{
+      @apply  text-lg font-normal text-gray-900 lg:text-xl 
+
+    }
   }
 
 @theme {
