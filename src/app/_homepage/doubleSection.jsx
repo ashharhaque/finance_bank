@@ -158,7 +158,7 @@ const DoubleArticle = (props) => {
      {/*last element is added so that during stick7 implementation the last the title must not move with second last item */}
      <div className="sticky top-1/3">
    <div
-        className="bg-white h-[500px] md:flex md:flex-row-reverse justify-around relative m-10 overflow-hidden"
+        className="bg-white  h-[700px] md:h-[500px] md:flex md:flex-row-reverse justify-around relative m-10 overflow-hidden"
     
       >
         <article
