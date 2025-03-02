@@ -105,7 +105,7 @@ const DoubleArticle = (props) => {
               : "md:translate-x-[200%] md:opacity-0"
           } `}
         >
-          <p className="textDark">
+          <p className="textDark p-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
             doloremque quas dignissimos, quasi beatae sunt earum inventore.
@@ -126,7 +126,7 @@ const DoubleArticle = (props) => {
    </div>
      <div className="sticky top-1/3">
      <div
-        className="bg-neutral-900  md:flex justify-around relative m-10 "
+        className="bg-neutral-900  md:flex justify-around relative m-10"
         ref={observedElementRef}
       >
         <article
@@ -136,7 +136,7 @@ const DoubleArticle = (props) => {
               : "md:translate-x-[-200%] md:opacity-0"
           } `}
         >
-          <p className="text-gray-100  text-2xl font-normal">
+          <p className="text ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
             accusamus quos qui magni facilis quam ex quod numquam tenetur
             doloremque quas dignissimos, quasi beatae sunt earum inventore.
