@@ -4,7 +4,7 @@ import ContentWithBgImg from "@/ui/contentWithBgImg";
 function ContentFixedSlide() {
   return (
     <div className="flex flex-col ">
-      <h1 className="z-100 flex px-4 md:px-[300px] sticky top-1/3 font-bold text-xl md:text-2xl">
+      <h1 className="z-100 flex px-4 md:px-[300px] sticky top-[30%] justify-center font-bold text-xl md:text-2xl">
         <span className="">Ashhar</span>
       </h1>
 
