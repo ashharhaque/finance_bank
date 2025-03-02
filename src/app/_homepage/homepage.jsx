@@ -8,7 +8,7 @@ import TestimonialCarousel from "@homepage/testiomial"
  function HomePage(){
     return(
         <>
-        <div className="min-h-screen bg-[url('/logo.png')] bg-no-repeat bg-center bg-fixed bg-cover">
+        <div className="min-h-screen bg-image">
         <HeroSection/>
         <div>
         <h2 className="headingTitle sticky top-0 ">
