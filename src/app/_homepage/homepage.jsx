@@ -11,10 +11,13 @@ import TestimonialCarousel from "@homepage/testiomial"
         <div className="min-h-screen bg-image">
         <HeroSection/>
         <div>
-        <h2 className="headingTitle sticky top-0 ">
+        <h2 className="headingTitle sticky top-0 z-20 ">
 WHO ARE WEee
 </h2>
+<div className="sticky top-1/3">
 <AboutUs/>
+
+</div>
         </div>
 <div className="relative">
 {/* <h2 className="headingTitle sticky top-0 z-20 ">
