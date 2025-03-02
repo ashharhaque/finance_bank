@@ -8,7 +8,7 @@ import FaceBookIcon from "@/public/icons/facebook1.svg";
 import YoutubeIcon from "@/public/icons/youtube-red.svg";
 import LinkedInIcon from "@/public/icons/linkedin.svg";
 import XIcon from "@/public/icons/twitter.svg";
-import Logo from "@/public/logo.png"
+import Logo from "@/public/logo1.jpeg"
 import {
   MenuIcon,
   IconCross2,
