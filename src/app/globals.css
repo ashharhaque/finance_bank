@@ -23,6 +23,11 @@
       @apply  text-lg font-normal text-gray-900 lg:text-xl 
 
     }
+    .borderProp{
+      @apply  border-b-4 border-teal-500 inline-block 
+
+    }
+    
   }
 
 @theme {
