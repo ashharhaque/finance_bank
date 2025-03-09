@@ -8,12 +8,16 @@ import AboutUs from "@homepage/aboutus";
 import WhyChooseUs from "@homepage/chooseus"
 import TestimonialCarousel from "@homepage/testiomial";
 import OurServices from "@homepage/OurServices"
+import TeamSection from "@homepage/teamSection"
 function HomePage() {
   return (
     <>
       <div className="min-h-screen ">
         <HeroSection />
         <div>
+          <div>
+            <TeamSection/>
+          </div>
           <div className="sticky ">
             <AboutUs />
           </div>
