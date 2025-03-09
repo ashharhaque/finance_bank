@@ -7,9 +7,11 @@ const HeroSection = () => {
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
           We invest in the world’s potential
         </h1>
-        <p className="mb-8 text sm:px-16 lg:px-48">
-          Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
-        </p>
+        <p className="mb-8 text-white sm:px-16 lg:px-48">
+    Partnering with <span className="font-bold bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-2 py-1 rounded-md">TEAM WORKS INC</span> means joining forces with a trusted partner dedicated to driving your business forward. We're here to help you unlock new opportunities, fuel growth, and achieve lasting success. Get in touch with us today and take the next step toward expanding your business horizons with confidence.
+</p>
+
+
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
           <a
             href="#"
