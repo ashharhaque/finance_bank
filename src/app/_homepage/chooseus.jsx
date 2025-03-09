@@ -58,7 +58,7 @@ const ChooseUs = () => {
             dedication.`
         },
         {
-            icon: "/icons/accessibility.svg",
+            icon: "/icons/easyAccessibility.svg",
             title: "Easy Accessibility",
             description: `connecting to us is as simple as saying hi to your friend.
             Our user-friendly digital platforms are designed to make us accessible to you at
