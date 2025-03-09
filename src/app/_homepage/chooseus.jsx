@@ -3,23 +3,43 @@ import Image from 'next/image';
 const ChooseUs = () => {
     const features = [
         {
-            icon: "https://www.svgrepo.com/show/503163/api-settings.svg",
-            title: "Powerful API",
+            icon: "/icons/expertIcon.svg",
+            title: "Expert Guidance",
             description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
         },
         {
-            icon: "https://www.svgrepo.com/show/503138/webpack.svg",
-            title: "Easy to integrate SDK",
+            icon: "/icons/BankIcon.svg",
+            title: "Access to an extensive network of Banks and NBFCS",
             description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
         },
         {
-            icon: "https://www.svgrepo.com/show/511771/dashboard-671.svg",
-            title: "Low Transaction Cost",
+            icon: "/icons/SolutionsIcon.svg",
+            title: "Crafted solutions for your needs",
             description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
         },
         {
-            icon: "https://www.svgrepo.com/show/76267/free-commercial-label.svg",
-            title: "Powerful Dashboard",
+            icon: "/icons/hassleFreeProcess.svg",
+            title: "Hasslefree process",
+            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+        },
+        {
+            icon: "/icons/trustIcon.svg",
+            title: "Transparency and trustworthiness",
+            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+        },
+        {
+            icon: "/icons/supportIcon.svg",
+            title: "Comprehensive Support System",
+            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+        },
+        {
+            icon: "/icons/accomplishmentIcon.svg",
+            title: "The accomplishment that speaks",
+            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+        },
+        {
+            icon: "/icons/accessibility.svg",
+            title: "Easy Accessibility",
             description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
         }
     ];
