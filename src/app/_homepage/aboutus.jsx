@@ -37,7 +37,7 @@ const AboutUs = () => {
     >
       <div className="container mx-auto px-4 text-center">
         <div className="mb-12">
-          <h2 className="font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
+          <h2 className="text-center mt-10 font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
             ABOUT US
           </h2>
           {/* <h3
@@ -47,7 +47,7 @@ const AboutUs = () => {
             Capturing Moments That Last Forever
           </h3> */}
           <p
-            className="mb-8 max-w-3xl mx-auto text-gray-700"
+            className="mt-15 mb-8 max-w-3xl mx-auto text-gray-700"
             data-aos="fade-down"
           >
             The company since its inception in 2012 under the commitment and

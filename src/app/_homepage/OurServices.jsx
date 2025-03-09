@@ -27,11 +27,11 @@ const Services = () => {
     return (
         <div className="bg-white text-gray-800">
             <main className="container mx-auto px-6 py-8">
-                <h1 className="text-4xl font-bold text-center text-indigo-800 mb-12 animate-fade-in">
-                    Our Services
-                </h1>
+            <h2 className="text-center font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
+           SERVICES WE PROVIDE
+          </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={service.title}
