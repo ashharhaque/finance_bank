@@ -98,27 +98,7 @@ function CommonLayout({ children }) {
             </span>
           </nav> */}
           <Navbar/>
-          <div
-            className=" pt-2 md:hidden"
-            onClick={() => {
-              console.log("on menu toggle--->");
-              setMenuToggleOpen(!menuToggleOpen);
-            }}
-          >
-            {menuToggleOpen ? (
-              <IconCross2
-                className={`transition-all delay-150 ${
-                  menuToggleOpen ? "" : ""
-                }`}
-              />
-            ) : (
-              <MenuIcon className="" />
-            )}
-
-            {/* <IconCross2 className={`transition-all delay-150 ease-in-out${menuToggleOpen?"hidden":"visible"}`} />
-           
-              <MenuIcon className={`transition-all delay-150 ease-in-out ${!menuToggleOpen?"hidden":"visible"}`} /> */}
-          </div>
+         
     
         <div className=" max-w-[100dvw]">{children}</div>
         <footer className=" flex flex-col min-h-[40dvh] ">
