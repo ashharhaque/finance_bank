@@ -20,7 +20,7 @@ const teamMembers = [
 ];
 
 const TeamMember = ({ name, role, description, experience, image }) => (
-  <div className="bg-gray-800 text-white shadow-lg rounded-2xl p-4 text-center relative pb-20">
+  <div className="bg-gray-800 mt-10 text-white shadow-lg rounded-2xl p-4 text-center relative pb-20">
     <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">
       <Image
         src={image}
@@ -43,7 +43,7 @@ const TeamSection = () => (
       <h2 className="text-center mt-10 font-heading mb-20 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
         MEET OUR FOUNDERS
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 space-y-10 sm:space-y-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-16">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
