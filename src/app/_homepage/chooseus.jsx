@@ -69,7 +69,7 @@ const ChooseUs = () => {
     return (
         <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="lg:text-center">
+                <div className="text-center">
                 <h2 className="font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
     Why choose us?
 </h2>
