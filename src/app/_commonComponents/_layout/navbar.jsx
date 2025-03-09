@@ -15,18 +15,13 @@ const Navbar = () => {
           {/* <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                         Company Logo
                     </span> */}
-                    {/**logo starts */}
-                    <div class="flex items-center space-x-3">
-  
-
-  <div class="text-4xl font-extrabold tracking-wide text-gray-900">
-    Team
-    <span class="bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent">
-      Works
-    </span>
-  </div>
-</div>
-
+          {/**logo starts */}
+          <div class="text-4xl font-extrabold tracking-wide text-gray-800">
+            Team
+            <span class="bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent">
+              Works
+            </span>
+          </div>
 
           {/*logo ends */}
         </a>
