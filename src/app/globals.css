@@ -33,6 +33,10 @@
       @apply  border-b-4 border-teal-500 inline-block 
 
     }
+    .bgColor{
+      @apply  bg-white
+
+    }
     
   }
 
