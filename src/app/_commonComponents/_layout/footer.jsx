@@ -49,7 +49,7 @@ const Footer = () => {
             {/* Add social icons here */}
             <div class=" flex mt-4 space-x-4 sm:justify-center sm:mt-0 ">
                         <a href="javascript:;"
-                            class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
+                            class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-purple-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <g id="Social Media">
@@ -61,7 +61,7 @@ const Footer = () => {
 
                         </a>
                         <a href="javascript:;"
-                            class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
+                            class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-purple-700">
                             <svg class="w-[1.25rem] h-[1.125rem] text-white" viewBox="0 0 15 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -71,7 +71,7 @@ const Footer = () => {
 
                         </a>
                         <a href="javascript:;"
-                            class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
+                            class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-purple-700">
                             <svg class="w-[1rem] h-[1rem] text-white" viewBox="0 0 13 12" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -81,7 +81,7 @@ const Footer = () => {
 
                         </a>
                         <a href="javascript:;"
-                            class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
+                            class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-purple-700">
                             <svg class="w-[1.25rem] h-[0.875rem] text-white" viewBox="0 0 16 12" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -92,18 +92,18 @@ const Footer = () => {
                         </a>
                     </div>
           </div>
-          <p className="mt-4 text-sm text-gray-500">
-            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
-          </p>
+        
         </div>
       </div>
 
-      <div class="py-9 border-t border-gray-200">
-                <div class=" flex items-center justify-center flex-col gap-8 lg:gap-0 lg:flex-row lg:justify-between">
-                    <span class=" text-sm text-gray-500 ">©<a href="https://pagedone.io/">pagedone</a> 2024, All rights reserved.</span>
-                 
-                </div>
-            </div>
+      <div className="py-9 border-t border-gray-200 bg-white">
+  <div className="text-center flex items-center justify-center">
+    <span className="text-gray-600 text-sm">
+      Powered by <a className="font-semibold text-gray-800 hover:text-blue-600 transition">ADALABS</a>
+    </span>
+  </div>
+</div>
+
     </div>
   );
 };
