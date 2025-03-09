@@ -1,7 +1,6 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -23,16 +22,13 @@ export default function ScrollToTop() {
   };
 
   return (
-    <motion.div
-      className={`fixed bottom-50 right-4 w-12 h-12 bg-purple-600 text-white flex items-center justify-center rounded-full shadow-lg cursor-pointer $ {
-        visible ? "block" : "hidden"
-      }`}
+    <div
+      className={`fixed bottom-50 right-4 w-12 h-12 bg-purple-600 text-white flex items-center justify-center rounded-full shadow-lg cursor-pointer transition-opacity duration-300 ${
+        visible ? "opacity-100" : "opacity-0 pointer-events-none"
+      } animate-bounce`}
       onClick={scrollToTop}
-      initial={{ y: 10 }}
-      animate={{ y: [0, -10, 0] }}
-      transition={{ repeat: Infinity, duration: 1.5 }}
     >
       <ArrowUp size={24} />
-    </motion.div>
+    </div>
   );
 }
