@@ -17,6 +17,7 @@ import {
   EmailIcon,
   FaxMachine,
 } from "@/icons/svgicon";
+import Navbar from "@commonLayout/navbar";
 
 function CommonLayout({ children }) {
   const [menuToggleOpen, setMenuToggleOpen] = useState(false);
@@ -24,21 +25,20 @@ function CommonLayout({ children }) {
   return (
     <>
       <div className="flex flex-col bg-white  min-h-dvh justify-between ">
-        <header className="flex flex-row justify-around h-[10dvh] relative ">
-          <Image
+          {/* <Image
             src={Logo}
             priority
             // height={500}
             // width={500}
             alt="logo image"
             className=" self-start h-[90%] w-[35%]  mt-1 object-cover"
-          />
+          /> */}
 
           {/* <nav
             className={`flex flex-col py-6 pr-4 clear-both  items-center w-[50%] mx-auto transition-all ease-in-out duration-700 ${menuToggleOpen?"translate-y-8  bg-yellow-400 ":"-translate-y-full invisible "}`}
           > */}
           {/* <h12 className="bg-red-600  ">QOPON</h12> */}
-          <nav
+          {/* <nav
             className={` flex list-text-heading  flex-col py-6 pr-4 mt-[20px] absolute top-full left-1/4 items-center w-[40%]  transition-all  ease-in-out duration-700 origin-top   md:flex md:flex-row md:self-stretch md:justify-around md:p-0 md:relative md:top-0 md:left-0 md:transition-none ${
               menuToggleOpen
                 ? " bg-zinc-50 translate-y-[0%] md:bg-white "
@@ -96,7 +96,8 @@ function CommonLayout({ children }) {
               BLOG
               <p className="underline-custom"></p>
             </span>
-          </nav>
+          </nav> */}
+          <Navbar/>
           <div
             className=" pt-2 md:hidden"
             onClick={() => {
@@ -118,7 +119,7 @@ function CommonLayout({ children }) {
            
               <MenuIcon className={`transition-all delay-150 ease-in-out ${!menuToggleOpen?"hidden":"visible"}`} /> */}
           </div>
-        </header>
+    
         <div className=" max-w-[100dvw]">{children}</div>
         <footer className=" flex flex-col min-h-[40dvh] ">
           <div className="min-h-[85%] flex flex-col md:flex-row  justify-around ">
