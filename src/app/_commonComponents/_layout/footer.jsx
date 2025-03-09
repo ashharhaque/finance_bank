@@ -26,8 +26,8 @@ const Footer = () => {
         </div>
 
         <div className="space-y-2 text-sm">
-          <p className="text-base font-bold tracking-wide text-gray-900">Contacts</p>
-          <div className="flex">
+          <p className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Contacts</p>
+          <div className="flex mt-8">
             <p className="mr-1 text-gray-800">Phone:</p>
             <a href="tel:850-123-5021" className="text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
           </div>
@@ -44,8 +44,8 @@ const Footer = () => {
         </div>
 
         <div>
-          <span className="text-base font-bold tracking-wide text-gray-900">Social</span>
-          <div className="flex items-center mt-1 space-x-3">
+          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase flex justify-center">Join Us On :</span>
+          <div className="flex items-center mt-8 space-x-3">
             {/* Add social icons here */}
             <div class=" flex mt-4 space-x-4 sm:justify-center sm:mt-0 ">
                         <a href="javascript:;"
