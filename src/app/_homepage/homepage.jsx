@@ -11,7 +11,7 @@ import OurServices from "@homepage/OurServices"
 function HomePage() {
   return (
     <>
-      <div className="min-h-screen bg-image">
+      <div className="min-h-screen ">
         <HeroSection />
         <div>
           <h2 className="headingTitle">WHO ARE WEee</h2>
