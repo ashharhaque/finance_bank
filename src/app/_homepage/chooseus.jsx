@@ -70,18 +70,19 @@ const ChooseUs = () => {
         <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="lg:text-center">
-                    <h2 className="font-heading mb-4 bg-orange-100 text-orange-800 px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold tracking-widest text-black uppercase title-font">
-                        Why choose us?
-                    </h2>
-                    <p className="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                <h2 className="font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
+    Why choose us?
+</h2>
+
+                    {/* <p className="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
                         We know tech, we know finance. We are fintech experts.
                     </p>
                     <p className="mt-4 max-w-2xl text-lg text-gray-500 lg:mx-auto">
                         We know how to handle taxation for all the countries we operate in. We care for our customers and help them manage cashflows.
-                    </p>
+                    </p> */}
                 </div>
 
-                <div className="mt-10">
+                <div className="mt-20">
                     <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                         {features.map((feature, index) => (
                             <div key={index} className="relative">
