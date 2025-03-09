@@ -5,42 +5,64 @@ const ChooseUs = () => {
         {
             icon: "/icons/expertIcon.svg",
             title: "Expert Guidance",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+            description: `We are a one-stop solution for all loan requirements. With
+            extensive expertise in this field, we know what exactly fulfils your requirements.
+            Save your time and efforts with us by exploring various loan options of different
+            banks and lending institutions without going one after another.`
         },
         {
             icon: "/icons/BankIcon.svg",
             title: "Access to an extensive network of Banks and NBFCS",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+            description: `We have an
+            extensive network of reputed banks and NBFCS’ which gives you a spectrum of
+            choices and at competitive rates that fit your business demands.`
         },
         {
             icon: "/icons/SolutionsIcon.svg",
             title: "Crafted solutions for your needs",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+            description: `Here at Teamwork Inc. with a team of
+            experts and seasoned advisors, we take time to understand your business and
+            your requirements. After deliberately looking into your query, requirements and
+            needs that serve your purpose, we customise loan options that align with your
+            requirements.`
         },
         {
             icon: "/icons/hassleFreeProcess.svg",
             title: "Hasslefree process",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+            description: `We at Team Works make your lending experience a
+            seamless, hassle-free process. We take on full responsibility of arranging your
+            papers and streamlining the application process to your lender.`
         },
         {
             icon: "/icons/trustIcon.svg",
             title: "Transparency and trustworthiness",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+            description: `our working culture is as transparent as
+            water is. We ensure that our clients must be aware of all terms and conditions of
+            the loan. We keep you updated at every stage of your loan processing and
+            maintain an honest conversation throughout the process.`
         },
         {
             icon: "/icons/supportIcon.svg",
             title: "Comprehensive Support System",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+            description: `We have created a comprehensive support
+            system, from the early stage of loan discussion to moving your file and finallydisbursement of loans, we are at constant support and guidance every step of
+            the way.`
         },
         {
             icon: "/icons/accomplishmentIcon.svg",
             title: "The accomplishment that speaks",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+            description: `Our actions speak more than words. We
+            have numerous success stories of businesses, where we have helped grow and
+            thrive. Our happy client's success stories, positive feedback and considering us
+            as the first choice for their financial needs are a testament to our success and
+            dedication.`
         },
         {
             icon: "/icons/accessibility.svg",
             title: "Easy Accessibility",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+            description: `connecting to us is as simple as saying hi to your friend.
+            Our user-friendly digital platforms are designed to make us accessible to you at
+            your fingertips.`
         }
     ];
 
