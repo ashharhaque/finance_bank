@@ -1,12 +1,13 @@
 import React from "react";
 import HeroSection from "@homepage/heroSection";
 import Testimonial from "@/ui/carousel";
-import DoubleArticle from "@homepage/doubleSection";
+// import DoubleArticle from "@homepage/doubleSection";
 import Clients from "@homepage/clientsNew";
 // import AboutUs from "@homepage/parallax";
 import AboutUs from "@homepage/aboutus";
 import WhyChooseUs from "@homepage/chooseus"
 import TestimonialCarousel from "@homepage/testiomial";
+import OurServices from "@homepage/OurServices"
 function HomePage() {
   return (
     <>
@@ -29,7 +30,8 @@ function HomePage() {
             <h2 className="headingTitle ">
               OUR SERVICESeesss
             </h2>
-            <DoubleArticle />
+            {/* <DoubleArticle /> */}
+            <OurServices/>
           </div>
         </div>
 

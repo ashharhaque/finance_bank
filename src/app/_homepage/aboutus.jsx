@@ -27,10 +27,10 @@ const AboutUs = () => {
                         {stats.map((stat, index) => (
                             <div
                                 key={index}
-                                className="rounded-lg border border-gray-200 bg-gray-100 p-6 text-center"
+                                className="rounded-lg bg-gray-800 text-white p-6 text-center shadow-md"
                             >
-                                <h4 className="mb-2 text-3xl font-bold text-purple-600">{stat.value}</h4>
-                                <p className="text-gray-700">{stat.label}</p>
+                                <h4 className="mb-2 text-3xl font-bold text-purple-400">{stat.value}</h4>
+                                <p className="text-gray-300">{stat.label}</p>
                             </div>
                         ))}
                     </div>
