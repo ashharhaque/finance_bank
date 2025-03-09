@@ -3,7 +3,8 @@ import HeroSection from "@homepage/heroSection";
 import Testimonial from "@/ui/carousel";
 import DoubleArticle from "@homepage/doubleSection";
 import Clients from "@homepage/clientsNew";
-import AboutUs from "@homepage/parallax";
+// import AboutUs from "@homepage/parallax";
+import AboutUs from "@homepage/aboutus";
 import TestimonialCarousel from "@homepage/testiomial";
 function HomePage() {
   return (
@@ -11,8 +12,8 @@ function HomePage() {
       <div className="min-h-screen bg-image">
         <HeroSection />
         <div>
-          <h2 className="headingTitle sticky top-0 z-20 ">WHO ARE WEee</h2>
-          <div className="sticky top-1/3">
+          <h2 className="headingTitle">WHO ARE WEee</h2>
+          <div className="sticky ">
             <AboutUs />
           </div>
         </div>
@@ -20,8 +21,8 @@ function HomePage() {
           {/* <h2 className="headingTitle sticky top-0 z-20 ">
   OUR SERVICESeesss
 </h2> */}
-          <div className="relative sticky top-1/3 z-100">
-            <h2 className="headingTitle sticky top-0 z-20 ">
+          <div className="relative ">
+            <h2 className="headingTitle ">
               OUR SERVICESeesss
             </h2>
             <DoubleArticle />
