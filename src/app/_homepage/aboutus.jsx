@@ -7,8 +7,8 @@ const AboutUs = () => {
     ];
 
     return (
-        <section id="about" className="py-20 md:px-20 lg:px-20 bg-white">
-            <div className="container mx-auto px-4">
+        <section id="about" className="py-20 md:px-20 lg:px-20 bg-white flex items-center justify-center">
+            <div className="container mx-auto px-4 text-center">
                 <div className="mb-12">
                     <h2 className="text-purple-600 text-lg mb-2" data-aos="fade-down">
                         About Us
@@ -16,7 +16,7 @@ const AboutUs = () => {
                     <h3 className="mb-4 text-3xl font-bold text-black section-title" data-aos="fade-down">
                         Capturing Moments That Last Forever
                     </h3>
-                    <p className="mb-8 max-w-3xl text-gray-700" data-aos="fade-down">
+                    <p className="mb-8 max-w-3xl mx-auto text-gray-700" data-aos="fade-down">
                         With over a decade of experience in professional photography,
                         we've mastered the art of storytelling through our lens. Our passion lies in capturing
                         authentic moments and turning them into timeless memories.
@@ -37,7 +37,7 @@ const AboutUs = () => {
                 </div>
 
                 {/* Buttons Section */}
-                <div className="flex flex-col sm:flex-row items-center gap-4 mt-8" data-aos="fade-up">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8" data-aos="fade-up">
                     <a
                         href="#team"
                         className="cursor-pointer rounded-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-8"
