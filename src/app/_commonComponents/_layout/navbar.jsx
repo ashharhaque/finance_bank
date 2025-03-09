@@ -66,24 +66,22 @@ const Navbar = () => {
                     }`}
                     id="mobile-menu-2"
                 >
-                    <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                    {['Home', 'Company', 'Marketplace', 'Features', 'Team', 'Contact'].map((item) => (
-    <li key={item}>
-        <a
-            href="#"
-            className="relative block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50
-            lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0
-            dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white 
-            lg:dark:hover:bg-transparent dark:border-gray-700
-            after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] 
-            after:bg-orange-500 hover:after:w-full after:transition-all after:duration-300"
-        >
-            {item}
-        </a>
-    </li>
-))}
+<ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-4 lg:mt-0">
+    {['Home', 'Company', 'Marketplace', 'Features', 'Team', 'Contact'].map((item) => (
+        <li key={item}>
+            <a
+                href="#"
+                className="block py-1.5 px-4 text-gray-700 border border-transparent
+                hover:bg-orange-100 hover:border-orange-500 rounded-full transition-all duration-300
+                dark:text-gray-400 dark:hover:bg-orange-700 dark:hover:border-orange-500"
+            >
+                {item}
+            </a>
+        </li>
+    ))}
+</ul>
 
-                    </ul>
+
                 </div>
             </div>
         </nav>
