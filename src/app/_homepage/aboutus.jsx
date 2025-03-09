@@ -1,10 +1,34 @@
+"use client";
+import { useEffect, useState } from "react";
+
 const AboutUs = () => {
     const stats = [
-        { value: "10+", label: "Years Experience" },
-        { value: "500+", label: "Happy Clients" },
-        { value: "1K+", label: "Projects Completed" },
-        { value: "20+", label: "Awards Won" }
+        { value: 10, label: "Years Experience" },
+        { value: 500, label: "Happy Clients" },
+        { value: 1000, label: "Projects Completed" },
+        { value: 20, label: "Awards Won" }
     ];
+
+    // Counter logic for animation
+    const Counter = ({ endValue }) => {
+        const [count, setCount] = useState(0);
+
+        useEffect(() => {
+            const duration = 2000; // Animation duration in milliseconds
+            const increment = endValue / (duration / 16); // Smooth increment step
+
+            const timer = setInterval(() => {
+                setCount((prev) => {
+                    const nextValue = prev + increment;
+                    return nextValue >= endValue ? endValue : nextValue;
+                });
+            }, 16); // Smooth updates using ~60 FPS timing
+
+            return () => clearInterval(timer); // Clean up on unmount
+        }, [endValue]);
+
+        return <span>{Math.round(count)}+</span>;
+    };
 
     return (
         <section id="about" className="py-20 md:px-20 lg:px-20 bg-white flex items-center justify-center">
@@ -29,7 +53,9 @@ const AboutUs = () => {
                                 key={index}
                                 className="rounded-lg bg-gray-800 text-white p-6 text-center shadow-md"
                             >
-                                <h4 className="mb-2 text-3xl font-bold text-purple-400">{stat.value}</h4>
+                                <h4 className="mb-2 text-3xl font-bold text-purple-400">
+                                    <Counter endValue={stat.value} />
+                                </h4>
                                 <p className="text-gray-300">{stat.label}</p>
                             </div>
                         ))}
