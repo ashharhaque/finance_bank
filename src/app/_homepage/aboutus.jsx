@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const AboutUs = () => {
   const stats = [
@@ -9,11 +9,28 @@ const AboutUs = () => {
     { value: 20, label: "Awards Won" },
   ];
 
-  // Counter logic for animation
+  // Counter logic for animation with Intersection Observer
   const Counter = ({ endValue }) => {
     const [count, setCount] = useState(0);
+    const [hasStarted, setHasStarted] = useState(false);
+    const ref = useRef(null);
 
     useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && !hasStarted) {
+            setHasStarted(true);
+          }
+        },
+        { threshold: 0.5 }
+      );
+
+      if (ref.current) observer.observe(ref.current);
+      return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+      if (!hasStarted) return;
       const duration = 2000; // Animation duration in milliseconds
       const increment = endValue / (duration / 16); // Smooth increment step
 
@@ -22,12 +39,12 @@ const AboutUs = () => {
           const nextValue = prev + increment;
           return nextValue >= endValue ? endValue : nextValue;
         });
-      }, 16); // Smooth updates using ~60 FPS timing
+      }, 16);
 
       return () => clearInterval(timer); // Clean up on unmount
-    }, [endValue]);
+    }, [hasStarted, endValue]);
 
-    return <span>{Math.round(count)}+</span>;
+    return <span ref={ref}>{Math.round(count)}+</span>;
   };
 
   return (
@@ -40,12 +57,6 @@ const AboutUs = () => {
           <h2 className="text-center mt-10 font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
             ABOUT US
           </h2>
-          {/* <h3
-            className="mb-4 text-3xl font-bold text-black section-title"
-            data-aos="fade-down"
-          >
-            Capturing Moments That Last Forever
-          </h3> */}
           <p
             className="mt-15 mb-8 max-w-3xl mx-auto text-gray-700"
             data-aos="fade-down"
@@ -53,7 +64,7 @@ const AboutUs = () => {
             The company since its inception in 2012 under the commitment and
             Vision of Mr.Kundan Kumar Singh and Mr.Rishi Arora is dedicated to
             supporting the growth of businesses like yours through expertise in
-            working capital, term loans and MSME loans.We have collaborative
+            working capital, term loans and MSME loans. We have collaborative
             partnerships with esteemed banking institutions and NBFC’S. Through
             collaborative endeavours with reputed banking institutions and NBFCs
             and by embracing the synergy of our expertise and partnerships, we
