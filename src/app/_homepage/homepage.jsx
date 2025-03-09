@@ -5,6 +5,7 @@ import DoubleArticle from "@homepage/doubleSection";
 import Clients from "@homepage/clientsNew";
 // import AboutUs from "@homepage/parallax";
 import AboutUs from "@homepage/aboutus";
+import WhyChooseUs from "@homepage/chooseus"
 import TestimonialCarousel from "@homepage/testiomial";
 function HomePage() {
   return (
@@ -16,6 +17,9 @@ function HomePage() {
           <div className="sticky ">
             <AboutUs />
           </div>
+        </div>
+        <div>
+          <WhyChooseUs/>
         </div>
         <div className="relative">
           {/* <h2 className="headingTitle sticky top-0 z-20 ">

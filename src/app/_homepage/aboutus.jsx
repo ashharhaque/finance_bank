@@ -1,60 +1,55 @@
-import Image from 'next/image';
-
 const AboutUs = () => {
-    const features = [
-        {
-            icon: "https://www.svgrepo.com/show/503163/api-settings.svg",
-            title: "Powerful API",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
-        },
-        {
-            icon: "https://www.svgrepo.com/show/503138/webpack.svg",
-            title: "Easy to integrate SDK",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
-        },
-        {
-            icon: "https://www.svgrepo.com/show/511771/dashboard-671.svg",
-            title: "Low Transaction Cost",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
-        },
-        {
-            icon: "https://www.svgrepo.com/show/76267/free-commercial-label.svg",
-            title: "Powerful Dashboard",
-            description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
-        }
+    const stats = [
+        { value: "10+", label: "Years Experience" },
+        { value: "500+", label: "Happy Clients" },
+        { value: "1K+", label: "Projects Completed" },
+        { value: "20+", label: "Awards Won" }
     ];
 
     return (
-        <section className="py-12 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="lg:text-center">
-                    <h2 className="font-heading mb-4 bg-orange-100 text-orange-800 px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold tracking-widest text-black uppercase title-font">
-                        Why choose us?
+        <section id="about" className="py-20 md:px-20 lg:px-20 bg-white">
+            <div className="container mx-auto px-4">
+                <div className="mb-12">
+                    <h2 className="text-purple-600 text-lg mb-2" data-aos="fade-down">
+                        About Us
                     </h2>
-                    <p className="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                        We know tech, we know finance. We are fintech experts.
+                    <h3 className="mb-4 text-3xl font-bold text-black section-title" data-aos="fade-down">
+                        Capturing Moments That Last Forever
+                    </h3>
+                    <p className="mb-8 max-w-3xl text-gray-700" data-aos="fade-down">
+                        With over a decade of experience in professional photography,
+                        we've mastered the art of storytelling through our lens. Our passion lies in capturing
+                        authentic moments and turning them into timeless memories.
                     </p>
-                    <p className="mt-4 max-w-2xl text-lg text-gray-500 lg:mx-auto">
-                        We know how to handle taxation for all the countries we operate in. We care for our customers and help them manage cashflows.
-                    </p>
-                </div>
 
-                <div className="mt-10">
-                    <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                        {features.map((feature, index) => (
-                            <div key={index} className="relative">
-                                <dt>
-                                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                                        <Image src={feature.icon} alt={feature.title} width={48} height={48} />
-                                    </div>
-                                    <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">{feature.title}</p>
-                                </dt>
-                                <dd className="mt-2 ml-16 text-base text-gray-500">
-                                    {feature.description}
-                                </dd>
+                    {/* About Cards Section */}
+                    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                        {stats.map((stat, index) => (
+                            <div
+                                key={index}
+                                className="rounded-lg border border-gray-200 bg-gray-100 p-6 text-center"
+                            >
+                                <h4 className="mb-2 text-3xl font-bold text-purple-600">{stat.value}</h4>
+                                <p className="text-gray-700">{stat.label}</p>
                             </div>
                         ))}
-                    </dl>
+                    </div>
+                </div>
+
+                {/* Buttons Section */}
+                <div className="flex flex-col sm:flex-row items-center gap-4 mt-8" data-aos="fade-up">
+                    <a
+                        href="#team"
+                        className="cursor-pointer rounded-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-8"
+                    >
+                        Meet Our Team
+                    </a>
+                    <a
+                        href="#contact"
+                        className="cursor-pointer rounded-full border-2 py-3 px-8 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white transition duration-300 ease-in-out"
+                    >
+                        Contact Us
+                    </a>
                 </div>
             </div>
         </section>
