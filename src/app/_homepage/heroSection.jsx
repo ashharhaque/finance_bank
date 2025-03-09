@@ -2,15 +2,22 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+    <section className="h-screen min-h-screen bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply flex items-center">
       <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
           We invest in the world’s potential
         </h1>
         <p className="mb-8 text-white sm:px-16 lg:px-48">
-    Partnering with <span className="font-bold bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-2 py-1 rounded-md">TEAM WORKS INC</span> means joining forces with a trusted partner dedicated to driving your business forward. We're here to help you unlock new opportunities, fuel growth, and achieve lasting success. Get in touch with us today and take the next step toward expanding your business horizons with confidence.
-</p>
-
+          Partnering with{" "}
+          <span className="font-bold bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-2 py-1 rounded-md">
+            TEAM WORKS INC
+          </span>{" "}
+          means joining forces with a trusted partner dedicated to driving your
+          business forward. We're here to help you unlock new opportunities,
+          fuel growth, and achieve lasting success. Get in touch with us today
+          and take the next step toward expanding your business horizons with
+          confidence.
+        </p>
 
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
           <a
