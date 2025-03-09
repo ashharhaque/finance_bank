@@ -20,16 +20,20 @@ const teamMembers = [
 ];
 
 const TeamMember = ({ name, role, description, experience, image }) => (
-  <div className="bg-gray-800 text-white shadow-lg rounded-2xl p-4 text-center">
-    <Image
-      src={image}
-      alt={name}
-      className="w-32 h-32 rounded-full mx-auto object-cover mb-4"
-    />
-    <h3 className="text-xl font-semibold">{name}</h3>
-    <p className="text-gray-400">{role}</p>
-    <p className="text-gray-300 mt-2">{description}</p>
-    <p className="text-gray-400 mt-1">Experience: {experience}</p>
+  <div className="bg-gray-800 text-white shadow-lg rounded-2xl p-4 text-center relative">
+    <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">
+      <Image
+        src={image}
+        alt={name}
+        className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-white"
+      />
+    </div>
+    <div className="pt-20">
+      <h3 className="text-xl font-semibold">{name}</h3>
+      <p className="text-gray-400">{role}</p>
+      <p className="text-gray-300 mt-2">{description}</p>
+      <p className="text-gray-400 mt-1">Experience: {experience}</p>
+    </div>
   </div>
 );
 
