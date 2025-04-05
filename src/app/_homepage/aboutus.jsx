@@ -61,14 +61,14 @@ const AboutUs = () => {
             className="mt-15 mb-8 max-w-3xl mx-auto text-gray-700"
             data-aos="fade-down"
           >
-            The company since its inception in 2012 under the commitment and
-            Vision of Mr.Kundan Kumar Singh and Mr.Rishi Arora is dedicated to
-            supporting the growth of businesses like yours through expertise in
-            working capital, term loans and MSME loans. We have collaborative
-            partnerships with esteemed banking institutions and NBFC’S. Through
-            collaborative endeavours with reputed banking institutions and NBFCs
-            and by embracing the synergy of our expertise and partnerships, we
-            offer a diverse range of financial products.
+            Team Work Advisors Pvt Ltd is a premier investment banking and
+            financial advisory firm with a deep-rooted expertise in debt
+            syndication, working capital management, and capital advisory. With
+            over 15 years of industry experience, our team brings unparalleled
+            insights and strategic solutions tailored to meet the evolving
+            financial needs of businesses. Having worked with global financial
+            institutions and Banks, we possess the expertise to navigate complex
+            financial landscapes and drive business success.
           </p>
 
           {/* About Cards Section */}
