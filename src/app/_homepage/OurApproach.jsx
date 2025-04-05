@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -33,7 +33,7 @@ const fadeInUp = {
     transition: {
       delay: custom * 0.2,
       duration: 0.6,
-      ease: 'easeOut',
+      ease: "easeOut",
     },
   }),
 };
@@ -50,7 +50,9 @@ const OurApproach = () => {
           custom={0}
           className="text-3xl md:text-4xl font-bold text-black uppercase tracking-wide mb-12"
         >
-          Our Approach
+          <h2 className="text-center font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
+            Our Approach
+          </h2>
         </motion.h2>
 
         <div className="space-y-10">
@@ -67,7 +69,9 @@ const OurApproach = () => {
               <h3 className="text-xl font-semibold text-orange-800 mb-2">
                 {step.title}
               </h3>
-              <p className="text-gray-700 text-sm md:text-base">{step.description}</p>
+              <p className="text-gray-700 text-sm md:text-base">
+                {step.description}
+              </p>
             </motion.div>
           ))}
         </div>

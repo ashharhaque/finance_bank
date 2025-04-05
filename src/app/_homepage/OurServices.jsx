@@ -102,7 +102,9 @@ const OurServices = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          Our Services
+          <h2 className="text-center font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
+            Our Services
+          </h2>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
