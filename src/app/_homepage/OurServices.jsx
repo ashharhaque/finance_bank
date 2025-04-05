@@ -1,66 +1,103 @@
-"use client"
-import { useEffect } from 'react';
+import React from "react";
+import { Briefcase, DollarSign, Layers, TrendingUp, RefreshCcw, Rocket } from "lucide-react";
 
 const services = [
-    {
-        title: "Web Development",
-        description: "Custom web applications tailored to your business needs. We use cutting-edge technologies to deliver fast, responsive, and scalable solutions.",
-        icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-    },
-    {
-        title: "Mobile App Development",
-        description: "Innovative mobile applications for iOS and Android. We create user-friendly apps that engage your audience and drive business growth.",
-        icon: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-    },
-    {
-        title: "Data Analytics",
-        description: "Turn your data into actionable insights. Our analytics services help you make informed decisions and optimize your business processes.",
-        icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-    }
+  {
+    title: "Debt Syndication",
+    icon: <DollarSign className="w-8 h-8 text-orange-600" />,
+    points: [
+      "Term Loans",
+      "Structured Finance",
+      "External Commercial Borrowings (ECBs)",
+      "Mezzanine Financing",
+      "Asset-Based Lending",
+    ],
+  },
+  {
+    title: "Working Capital Management",
+    icon: <TrendingUp className="w-8 h-8 text-orange-600" />,
+    points: [
+      "Fund-Based & Non-Fund-Based Facilities",
+      "Invoice & Receivables Financing",
+      "Cash Flow Optimization Strategies",
+      "Supply Chain Financing",
+      "Trade Finance Solutions",
+    ],
+  },
+  {
+    title: "Project Financing",
+    icon: <Layers className="w-8 h-8 text-orange-600" />,
+    points: [
+      "Feasibility Studies & Financial Modeling",
+      "Debt & Equity Structuring",
+      "Government Incentives & Subsidies Advisory",
+      "Private Equity & Venture Capital Funding",
+    ],
+  },
+  {
+    title: "Capital Advisory",
+    icon: <Briefcase className="w-8 h-8 text-orange-600" />,
+    points: [
+      "Equity Financing",
+      "Convertible Instruments",
+      "Private Placement",
+      "Capital Restructuring",
+    ],
+  },
+  {
+    title: "Business Restructuring & Turnaround",
+    icon: <RefreshCcw className="w-8 h-8 text-orange-600" />,
+    points: [
+      "Debt Restructuring & Refinancing",
+      "Financial Risk Assessment",
+      "Asset Monetization Strategies",
+      "Insolvency & Bankruptcy Advisory",
+    ],
+  },
+  {
+    title: "Venture Capital & MSME Funding",
+    icon: <Rocket className="w-8 h-8 text-orange-600" />,
+    points: [
+      "Venture Capital & Angel Investment Advisory",
+      "MSME Business Loans & Credit Facilitation",
+      "Government-Backed Loan Assistance",
+      "Startup & Growth-Stage Fundraising",
+    ],
+  },
 ];
 
-const Services = () => {
-    useEffect(() => {
-        document.documentElement.classList.remove('dark');
-    }, []);
-
-    return (
-        <div className="bg-white text-gray-800">
-            <main className="container mx-auto px-6 py-8">
-            <h2 className="text-center font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
-           SERVICES WE PROVIDE
-          </h2>
-
-                <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {services.map((service, index) => (
-                        <div
-                            key={service.title}
-                            className="bg-gray-900 text-white rounded-xl shadow-md p-6 transform transition-all duration-300 hover:scale-105 animate-fade-in"
-                            style={{ animationDelay: `${0.1 * (index + 1)}s` }}
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-indigo-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={service.icon} />
-                            </svg>
-                            <h2 className="text-xl font-semibold text-indigo-400 mb-2">{service.title}</h2>
-                            <p className="text-gray-300">{service.description}</p>
-                        </div>
-                    ))}
+const OurServices = () => {
+  return (
+    <section className="bg-white py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 uppercase tracking-wide mb-12">
+          Our Services
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {services.map((service, idx) => (
+            <div
+              key={idx}
+              className="bg-white border border-orange-100 hover:shadow-xl transition-shadow duration-300 rounded-2xl p-6"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-orange-100 p-3 rounded-full">
+                  {service.icon}
                 </div>
-            </main>
-
-            <style>
-                {`
-                @keyframes fadeIn {
-                    from { opacity: 0; transform: translateY(20px); }
-                    to { opacity: 1; transform: translateY(0); }
-                }
-                .animate-fade-in {
-                    animation: fadeIn 0.5s ease-out forwards;
-                }
-                `}
-            </style>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {service.title}
+                </h3>
+              </div>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                {service.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
-    );
+      </div>
+    </section>
+  );
 };
 
-export default Services;
+export default OurServices;
