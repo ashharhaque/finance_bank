@@ -9,6 +9,7 @@ import WhyChooseUs from "@homepage/chooseus"
 import TestimonialCarousel from "@homepage/testiomial";
 import OurServices from "@homepage/OurServices"
 import TeamSection from "@homepage/teamSection"
+import OurApproach from "@homepage/OurApproach"
 function HomePage() {
   return (
     <>
@@ -21,6 +22,9 @@ function HomePage() {
           <div className="sticky ">
             <AboutUs />
           </div>
+        </div>
+        <div>
+          <OurApproach/>
         </div>
         <div>
           <WhyChooseUs/>
