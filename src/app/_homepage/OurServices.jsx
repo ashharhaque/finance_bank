@@ -1,5 +1,17 @@
-import React from "react";
-import { Briefcase, DollarSign, Layers, TrendingUp, RefreshCcw, Rocket } from "lucide-react";
+'use client';
+
+import React from 'react';
+import {
+  Briefcase,
+  DollarSign,
+  Layers,
+  TrendingUp,
+  RefreshCcw,
+  Rocket,
+} from 'lucide-react';
+
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const services = [
   {
@@ -66,18 +78,43 @@ const services = [
   },
 ];
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (delay = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      delay,
+      ease: 'easeOut',
+    },
+  }),
+};
+
 const OurServices = () => {
   return (
     <section className="bg-white py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 uppercase tracking-wide mb-12">
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold text-center text-gray-800 uppercase tracking-wide mb-12"
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           Our Services
-        </h2>
+        </motion.h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, idx) => (
-            <div
+            <motion.div
               key={idx}
               className="bg-white border border-orange-100 hover:shadow-xl transition-shadow duration-300 rounded-2xl p-6"
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              custom={idx * 0.15}
+              viewport={{ once: true, amount: 0.3 }}
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-orange-100 p-3 rounded-full">
@@ -92,7 +129,7 @@ const OurServices = () => {
                   <li key={i}>{point}</li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
