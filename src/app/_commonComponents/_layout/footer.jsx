@@ -60,7 +60,7 @@ const Footer = () => {
           <div className="flex items-center space-x-5 mt-2">
             <a
               href="https://linkedin.com"
-              className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-700 transition-colors shadow-md"
+              className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-purple-700 transition-colors shadow-md"
             >
               <Linkedin className="w-5 h-5 text-white" />
             </a>
