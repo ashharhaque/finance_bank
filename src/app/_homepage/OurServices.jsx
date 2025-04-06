@@ -93,7 +93,7 @@ const fadeInUp = {
 
 const OurServices = () => {
   return (
-    <section className="bg-white py-20">
+    <section id="our-services" className="bg-white py-20">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-center text-gray-800 uppercase tracking-wide mb-12"

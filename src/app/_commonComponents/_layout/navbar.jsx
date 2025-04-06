@@ -77,22 +77,22 @@ const Navbar = () => {
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-4 lg:mt-0">
             {[
-              "Home",
-              "Company",
-              "Marketplace",
-              "Features",
-              "Team",
-              "Contact",
+             { name: "Home", link: "#home" },
+             { name: "About Us", link: "#about-us" },
+             { name: "Services", link: "#our-services" },
+             { name: "Founders", link: "#ourfounders" },
+              
             ].map((item) => (
               <li key={item}>
-                <a
-                  href="#"
-                  className="block py-1.5 px-4 text-gray-700 border border-transparent
+                <Link href={item.link}  className="block py-1.5 px-4 text-gray-700 border border-transparent
                 hover:bg-orange-100 hover:border-orange-500 rounded-full transition-all duration-300
-                dark:text-gray-400 dark:hover:bg-orange-700 dark:hover:border-orange-500"
+                dark:text-gray-400 dark:hover:bg-orange-700 dark:hover:border-orange-500">{item?.name}</Link>
+                {/* <a
+                  href="#"
+                 
                 >
-                  {item}
-                </a>
+                  
+                </a> */}
               </li>
             ))}
           </ul>
