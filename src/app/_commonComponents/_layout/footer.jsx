@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-white px-4 pt-16 pb-10 mx-auto max-w-4xl md:px-8">
       <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 justify-center">
         {/* Contact Section */}
-        <div className="flex flex-col items-center text-center space-y-6 text-sm">
+        <div id="contact-us" className="flex flex-col items-center text-center space-y-6 text-sm">
           <h2 className="text-2xl font-bold tracking-wide text-gray-900 uppercase">Contact Us</h2>
           <p className="text-gray-700 font-medium text-base">Team Work Advisors Pvt Ltd</p>
 
