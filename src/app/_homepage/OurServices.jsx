@@ -122,11 +122,11 @@ const OurServices = () => {
                 <div className="bg-orange-100 p-3 rounded-full">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-xl font-semibold text-orange-800 mb-1">
                   {service.title}
                 </h3>
               </div>
-              <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm">
+              <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
                 {service.points.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
