@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
-
+import Link from "next/link";
 const AboutUs = () => {
   const stats = [
     { value: 10, label: "Years Experience" },
@@ -49,7 +49,7 @@ const AboutUs = () => {
 
   return (
     <section
-      id="about"
+      id="about-us"
       className="py-20 md:px-20 lg:px-20 bg-white flex items-center justify-center"
     >
       <div className="container mx-auto px-4 text-center">
@@ -92,18 +92,22 @@ const AboutUs = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
           data-aos="fade-up"
         >
-          <a
+          <Link href="#ourfounders"  className="cursor-pointer rounded-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-8"> Meet Our Founders</Link>
+          {/* <a
             href="#team"
             className="cursor-pointer rounded-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-8"
-          >
-            Meet Our Team
-          </a>
-          <a
+          > */}
+           
+          {/* </a> */}
+          <Link href="#contact-us" className="cursor-pointer rounded-full border-2 py-3 px-8 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white transition duration-300 ease-in-out">
+          Contact Us
+          </Link>
+          {/* <a
             href="#contact"
-            className="cursor-pointer rounded-full border-2 py-3 px-8 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white transition duration-300 ease-in-out"
+            
           >
-            Contact Us
-          </a>
+           
+          </a> */}
         </div>
       </div>
     </section>

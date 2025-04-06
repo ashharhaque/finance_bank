@@ -44,11 +44,11 @@ const TeamMember = ({ name, role, description, experience, image }) => (
     </div>
     <div className="pt-6">
       <h3 className="text-2xl font-bold text-gray-800">{name}</h3>
-      <p className="text-orange-600 font-medium mt-1">{role}</p>
-      <div className="text-gray-600 mt-4 text-sm leading-relaxed whitespace-pre-line text-justify">
+      <p className="text-orange-700 font-medium mt-1">{role}</p>
+      <div className="text-gray-700  mt-4 text-sm leading-relaxed whitespace-pre-line text-justify">
         {description}
       </div>
-      <p className="text-gray-500 text-sm mt-4 italic">
+      <p className="text-gray-700 text-sm mt-4 italic">
         Experience: {experience}
       </p>
     </div>
@@ -56,11 +56,11 @@ const TeamMember = ({ name, role, description, experience, image }) => (
 );
 
 const TeamSection = () => (
-  <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
+  <section id="ourfounders" className="py-16 bg-gradient-to-br from-orange-50 to-white">
     <div className="container mx-auto px-4">
-      <h2 className="text-center font-heading mb-16 text-orange-800 text-3xl sm:text-4xl font-extrabold uppercase tracking-wider">
-        Meet Our Founders
-      </h2>
+    <h2 className="text-center font-heading  mb-6 bg-orange-100 text-orange-800 px-6 py-3 rounded-xl md:w-96 md:mx-auto text-lg md:text-2xl font-bold tracking-widest uppercase title-font">
+           Meet Our Founders
+          </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-6xl mx-auto">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
