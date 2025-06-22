@@ -34,13 +34,13 @@ With a vision to drive financial excellence and strategic business growth, Mr. A
 const TeamMember = ({ name, role, description, experience, image }) => (
   <div className="bg-white shadow-xl rounded-3xl p-6 pt-20 text-center relative group transition-all hover:shadow-2xl duration-300">
     <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">
-      <Image
+      {/* <Image
         src={image}
         alt={name}
         width={128}
         height={128}
         className="rounded-full object-cover border-4 border-white shadow-md"
-      />
+      /> */}
     </div>
     <div className="pt-6">
       <h3 className="text-2xl font-bold text-gray-800">{name}</h3>

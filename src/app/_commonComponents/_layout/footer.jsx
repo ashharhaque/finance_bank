@@ -11,32 +11,32 @@ const Footer = () => {
           <p className="text-gray-700 font-medium text-base">Team Work Advisors Pvt Ltd</p>
 
           {/* Address */}
-          <div className="grid grid-cols-[2rem_1fr] items-center gap-3">
+          {/* <div className="grid grid-cols-[2rem_1fr] items-center gap-3">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100">
               <MapPin className="h-4 w-4 text-blue-600" />
             </div>
             <span className="text-gray-700">123 Business Street, Mumbai, India</span>
-          </div>
+          </div> */}
 
           {/* Phone */}
-          <div className="grid grid-cols-[2rem_1fr] items-center gap-3">
+          {/* <div className="grid grid-cols-[2rem_1fr] items-center gap-3">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100">
               <Phone className="h-4 w-4 text-blue-600" />
             </div>
             <a href="tel:+911234567890" className="text-blue-600 hover:underline">
               +91 12345 67890
             </a>
-          </div>
+          </div> */}
 
           {/* Email */}
-          <div className="grid grid-cols-[2rem_1fr] items-center gap-3">
+          {/* <div className="grid grid-cols-[2rem_1fr] items-center gap-3">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100">
               <Mail className="h-4 w-4 text-blue-600" />
             </div>
             <a href="mailto:info@teamworkadvisors.com" className="text-blue-600 hover:underline">
               info@teamworkadvisors.com
             </a>
-          </div>
+          </div> */}
 
           {/* Website */}
           <div className="grid grid-cols-[2rem_1fr] items-center gap-3">
@@ -44,12 +44,12 @@ const Footer = () => {
               <Globe className="h-4 w-4 text-blue-600" />
             </div>
             <a
-              href="https://www.teamworkadvisors.com"
+              href="https://www.teamworksadvisors.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
-              www.teamworkadvisors.com
+              www.teamworksadvisors.com
             </a>
           </div>
         </div>
