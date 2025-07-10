@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {CommonLayout} from "@commonLayout/commonLayout.jsx"
+import MaintenancePage from "@homepage/maintence.jsx";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,9 +24,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <CommonLayout>
+        <MaintenancePage>
         {children}
-        </CommonLayout>
+
+        </MaintenancePage>
+        {/* <CommonLayout> */}
+        {/* {children} */}
+        {/* </CommonLayout> */}
         {/* <script src="https://console.authkey.io/js/main.js" id="authkey-chat-widget" widget-id="50595f9b-feec-472d-bcc0-f19d788740f8"></script> */}
       </body>
     </html>
